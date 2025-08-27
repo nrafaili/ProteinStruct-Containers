@@ -281,15 +281,15 @@ if __name__ == '__main__':
     flags.DEFINE_integer(
         'recycle_msa_subsample', 0, '(Chai default: 0) Number of MSA subsamples to recycle.')
     flags.DEFINE_integer(
-        'num_trunk_recycles', 3, '(Chai default: 3) Number of trunk recycles.')
+        'num_trunk_recycles', 1, '(Chai default: 3) Number of trunk recycles.')
     flags.DEFINE_integer(
-        'num_diffn_timesteps', 200, '(Chai default: 200) Number of diffusion timesteps.')
+        'num_diffn_timesteps', 5, '(Chai default: 200) Number of diffusion timesteps.')
     flags.DEFINE_integer(
-        'num_diffn_samples', 5, '(Chai default: 5) Number of diffusion samples.')
+        'num_diffn_samples', 1, '(Chai default: 5) Number of diffusion samples.')
     flags.DEFINE_integer(
         'num_trunk_samples', 1, '(Chai default: 1) Number of trunk samples.')
     flags.DEFINE_integer(
-        'seed', None, 'Random seed.')
+        'seed', 42, 'Random seed.')
     flags.DEFINE_string(
         'device', None, 'Device to use for chai-lab (e.g., "cuda:0"). '
         'If --use_gpu is True, Singularity will make GPUs available; '
